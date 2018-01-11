@@ -1,0 +1,11 @@
+img {
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+    img{
+        border: solid 2px green;
+        border-radius: 50%;
+    }
+}   
+/* use min-width with mobile first design, use max-width for refactoring a desktop type */
