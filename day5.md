@@ -41,3 +41,11 @@ Remember jQuery is objects build the stuff into the console.
 day3
 
 jQuery with Events
+    - delegated event -> $(.exhistingContainer).on('click','child', function())
+
+Templating Engines
+    -i.e. handlebars
+        how to incorporate Handlebars:
+        - template
+        - compile 
+        - render
