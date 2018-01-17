@@ -138,11 +138,14 @@ check the last hour of video for local storage to speed up the site.
 
 
 READ HTTP WIKI 
+https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 read about ETag when you make a head request and the ETag has not changed
 HTTP protocol is stateless (doesn't remember anything) 
 
 
 ## Assignment Prep
+
+make a GET request to the JSON file.
 
 
 
