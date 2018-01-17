@@ -26,7 +26,18 @@ type npm that gives you the manual page
 
 npm init -> it walks you through a prompt that creates a package.json file that is at the root of all web app.
 
-npm init -y creates a blank package.json file.
+npm init -y creates a blank package.json file (meta info)
+
+npm install (or npm i) -S express (or --s)
+anytime you install a new module "node_modules" dir
+
+when you add a dependency NPM adds or remove the dependency in the package.json file
+-g flag allows you to install anywhere on my computer.
+We will git ignore the node Modules
+
+
+
+cowsay is a test module
 
 ### express.js
 
