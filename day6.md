@@ -77,6 +77,7 @@ when you see brackets in documentation.  [] are for optional parameters.
 
 here is a AJAX call
 
+- GET
 $.ajax({
     url: 'https://pokeapi.co/api/v2/pokemon/2',
     method: 'GET',      <------ USE CAPITALS ON THE METHOD
@@ -86,10 +87,69 @@ $.ajax({
     }
 });
 
+- POST
+$.ajax({
+    url: 'https://pokeapi.co/api/v2/pokemon',
+    method: 'POST',      <------ USE CAPITALS ON THE METHOD
+    data: { ... },
+    success: function(data, message){
+        console.log('data that I got back from the api: ', data);
+        $('#broadcast img').attr('src', data.sprites.front_default);  <-----this property was in the property of the the json
+    }
+});
 
+- PUT
+.ajax({
+    url: 'https://pokeapi.co/api/v2/pokemon/123443242',
+    method: 'PUT',      <------ USE CAPITALS ON THE METHOD
+    data: { ... },
+    success: function(data, message){
+        console.log('data that I got back from the api: ', data);
+        $('#broadcast img').attr('src', data.sprites.front_default);  <-----this property was in the property of the the json
+    }
+});
+
+- DELETE
+.ajax({
+    url: 'https://pokeapi.co/api/v2/pokemon/123443242',
+    method: 'DELETE',      <------ USE CAPITALS ON THE METHOD
+    success: function(data, message){
+        console.log('data that I got back from the api: ', data);
+        $('#broadcast img').attr('src', data.sprites.front_default);  <-----this property was in the property of the the json
+    }
+});
+
+This is a different way to do above....
+
+$.getJSON('https://pokeapi.co/api/v2/pokemon/5', function(data){     <------ this is called a strict callback function
+    console.log("data info:", data)
+});
+
+$.getJSON('https://pokeapi.co/api/v2/pokemon/5')     <------ this is a better way of line 124
+.then () => {console.log("data info:", data)
+});
+
+
+$.get('https://pokeapi.co/api/v2/pokemon/3').then(data => console.log(data) );
+
+check the last hour of video for local storage to speed up the site.
+
+
+
+
+READ HTTP WIKI 
+read about ETag when you make a head request and the ETag has not changed
+HTTP protocol is stateless (doesn't remember anything) 
 
 
 ## Assignment Prep
+
+
+
+
+
+
+
 
 
 * Tips:  when creating pseudo code add "TODO"
