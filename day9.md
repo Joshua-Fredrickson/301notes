@@ -46,10 +46,49 @@ social media agrigation app that gathers all the data from FB #insta etc... and 
 check out APIs!!!!!  
 CORS issues can black list ips 
 
-### SQL - JOINS!
+### SQL - JOINS and RELATIONSHIPS!
+check out the relational model in wiki
+Data Models Schema
 
 
+ENDPOINTS!!!
+/api/cats   cats is the resource
 
+/api/weather/seattle   weather/seattle = uri
+uniform resoure indicator
+
+normalization - discussion this 
+in creating databases & make them scalable and make it modulize it!
+
+Checkout SQL aliases.
+
+NO SQL systems are out there.
 
 ### FUNCTIONAL PROGRAMMING
+this is a paradigm!
+
+SIMPLE != EASY
+You can easily chain 
+FP methods
+.forEach
+.some and .every
+.concat
+
+Defanition of FP
+- Immutablity
+- Declarative vs. Imperative code
+- stateless (pure) funciotns
+- First class functions & currying
+
+FP does not mutate or change the original data.
+check out the following immutability in JS
+ImmutableJS, Mori, Deep-freeze
+
+.map
+
+.filter
+
+.reduce
+
+
 
