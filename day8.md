@@ -37,7 +37,7 @@ DATA Types
 - Text 
 - Date 
 - Time
-
+- boolean
 Primary keys and Forgein keys:  Primary keys are like "id"
 
 CRUD
@@ -69,8 +69,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.rlencoded( { extended: true}));
 app.use(express.static('./public'));
 
+!!!!!!!! watch the video to add the code from the app.js creation from the 2nd video!!!!!!!
 
+- database code
 
+postgres will be pointed to 
 
 
 ##### psl #####
