@@ -28,7 +28,23 @@ to static files(non functioning)
 to DataBase (non functioning)
 creating the HTML
 create the .js logic on the web site.
+create a function to create a table in SQL
 
+
+check out "test frameworks"!!!!
+mocha & chia.js
+
+Describe blocks
+
+expect blocks
+
+
+
+social media agrigation app that gathers all the data from FB #insta etc... and combines it into your app.
+
+
+check out APIs!!!!!  
+CORS issues can black list ips 
 
 ### SQL - JOINS!
 
