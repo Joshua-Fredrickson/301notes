@@ -84,11 +84,47 @@ FP does not mutate or change the original data.
 check out the following immutability in JS
 ImmutableJS, Mori, Deep-freeze
 
+
 .map
+to run a function through each array and returns a new array.
 
 .filter
+it's an array method that passes a logic and then creates a new array
 
 .reduce
+it accepts callback function that creates an object or an array.
+it can also create an object with {} after you pass the call back.
+
+example:
+
+RETURN OBJECT
+var stuff = ['pencil', 'pen']
+
+stuff.reduce (function(acc, cur, idx, arr) {
+    acc[cur] = cur.split('').reverse().join('');
+},{});
+
+
+acc | cur       | idx   | arr    | result
+--------------------------------------------
+{}  | 'pencil'  | 0     | [..]   | { pencil:'lincep}
+
+
+accumulator = acc
+current = current
 
 
 
+
+
+
+
+LAB HINT = indexOf keeps 1 item.
+
+
+iife
+immediately invocated function expression
+This gives us private helpers for globally expression that are in a private scope.
+
+
+MOST IMPORTANT  WRRC & FP of this week!!!!!
