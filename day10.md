@@ -87,3 +87,36 @@ create an org in github & 2 repos
 create a server & .gitignore 
 add to heroku
 use the same dependencies
+
+
+*API:*
+1 - create an organization on github to hold your *client* and *server* repo’s
+2 - start building your server - run `npm init`, install any npm dependencies (`express`, `cors`, `pg`) and create a `server.js` file
+3 - setup basic demo routes for `GET` and `POST` requests
+4 - connect your application to github (`git init` and `git remote add origin git.url`)
+5 - create a new application in Heroku
+6 - click on the resources tab and provision a postgres database (free plan)
+7 - copy the `DATABASE_URL` config var (settings tab) and add that and your database connection code to your `server.js` file
+8 - click on the Deploy tab and setup automatic deployments
+9 - go to the Activity tab and watch the build process
+
+*Client:*
+1 - create a simple `index.html` and associated `app.js` file in your `client` repo (don’t forget to include jQuery)
+2 - click on the Settings tab, scroll down to the GH-Pages section and point your deployments to your `master` branch
+2 - create a few simple `GET` and `POST` `$.ajax` requests in your `app.js` file (for testing) - *be sure* to create an `__API_URL__` that points to your API on Heroku
+3 - test to ensure your application’s are talking to each other!  you’ll likely need to fix multiple issues before this works!
+[4:11 PM]
+:point_up:*this is a guideline, not exact steps* - be sure to test frequently and use build logs and your `console` to help you debug
+
+
+
+#### LAB OVERVIEW ####
+
+- just a mobile view!!
+- get a build a database with get and post routes
+- create a page that allows you to add data
+- if you want to create a form  ;)
+- image url, book title, author
+- GET /api/v1/books
+
+
