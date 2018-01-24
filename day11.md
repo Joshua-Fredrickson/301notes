@@ -42,9 +42,10 @@ grab the CDN for pages.js
 
 ## Anatomy of a URL
 
-
+https://doepud.co.uk/blog/anatomy-of-a-url
 
 ## INTRO to PAGE.JS
+
 
 
 ## Let's Build a SPA
@@ -99,3 +100,62 @@ app.use is rout level middleware
 app.get('*', (req, res) => {
     res.sendFile('index.html', { root: 'public'});
 });
+
+
+in the modular view
+
+this is a factory pattern when you create an object (i.e. aboutView)
+(function(module) {
+    const aboutView = {};
+
+    aboutView.init = function() {
+        $('#id here').empty();  <---- this clears the container
+        $('body').css('background', 'orange');
+        $('#content').text('text goes here');
+    }
+
+
+    module.aboutView = aboutView;
+})(window);
+
+
+
+
+on the route.js file
+
+'use strict';
+
+page('/about', aboutView.init)  <-- this is a method of PAGE.js
+
+
+page();       <---- this is needed to run PAGE.js
+
+hashes in a url can break page.js
+
+
+'use strict';
+
+(function(module) {
+    const contactView = {};
+
+    contactView.init = function() {
+        $('#id here').empty();  <---- this clears the container
+        $('body').css('background', 'orange');
+        $('#content').text('text goes here');
+        $.getJSON('./scripts/model/contact/json')
+            .then(data => {
+                console.log('ourJSON data', data);
+                
+                data.forEach(contact => {
+                    var liEL = document.createElement('li');
+                    liEl.innerHTML = `${contact.name} has a favorite number is ${contact.fav_num}.`
+                $('#contacts').append(liEl);
+                });
+            })
+    }
+
+    module.contactView = contactView;
+})(window);
+
+
+
